@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
 	})
 })
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs',{
+		pageTitle: 'Projects',
+		message: 'This is a list of all the Projects'
+	})
+})
+
 app.get('/bad', (req, res) => {
 	res.send({
 		message: 'General error',
